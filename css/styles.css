@@ -5,6 +5,7 @@
     --headings-color: #2E2F42;
     --background: #F4F4FD;
     --second-background: #ffffff;
+    --footer-social-media-pressed-state: #31D0AA;
 }
 
 body {
@@ -189,7 +190,10 @@ img {
 .hero {
     background-color: var(--headings-color);
     text-align: center;
-
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -257,6 +261,55 @@ img {
     width: 264px;
 }
 
+.icons-features-background {
+    height: 112px;
+    background: var(--background);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .feature-list-item::before {
+    content: "";
+    display: block;
+    background-color: var(--background);
+    height: 112px;
+    margin-bottom: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.feature-list-item:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.feature-list-item:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+
+}
+
+.feature-list-item:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+
+}
+
+.feature-list-item:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+}
+ */
+
+/* .feature-icon {
+    height: 112px;
+    background-color: var(--background);
+    border-radius: 4px;
+    margin-bottom: 8px;
+} */
+
 .feature-title {
     margin-top: 0;
     margin-bottom: 8px;
@@ -273,6 +326,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
 }
+
 
 
 /* mission section */
@@ -324,6 +378,23 @@ img {
     display: flex;
     gap: 24px;
     border-radius: 0px 0px 4px 4px;
+
+}
+
+
+.employee-card {
+    background: var(--second-background);
+    width: 264px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.card {
+
+    padding: 32px 16px;
+
 }
 
 .employee-name {
@@ -343,22 +414,110 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 8px;
 }
 
-.card {
+.social-media-list {
+    display: flex;
+    gap: 24px;
+    display: flex;
+    /* змінюємо режим відображення на flex */
+    justify-content: center;
 
-    padding: 32px 16px;
+}
+
+/* .social-media-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--brand-color);
+}
+
+.sm-icon {
+    fill: var(--second-background);
+} */
+
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--brand-color);
+
+    fill: var(--second-background);
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--pressed-state);
+}
+
+/* our customers */
+
+.our-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-title {
+    margin-bottom: 72px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--headings-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+    /* flex-wrap: nowrap; */
+}
+
+.customer-logo {
+    /* display: inline-block; */
+
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
 
 }
 
-.employee-card {
-    background: var(--second-background);
-    width: 264px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-
+.customer-link {
+    width: 168px;
+    height: 88px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: #8E8F99;
 }
+
+.customer-link:hover,
+.customer-link:focus {
+    fill: var(--pressed-state);
+}
+
+/* .customer-logo::before {
+    content: "";
+    display: block;
+    width: 168px;
+    height: 88px;
+    background-color: blue;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+
+    /* width: 100%;
+        */
+
 
 
 /* main page portfolio */
@@ -409,6 +568,7 @@ img {
     background-color: var(--pressed-state);
     color: var(--second-background);
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -419,6 +579,10 @@ img {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+}
+
+.filter-list-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-gallery-description {
@@ -448,29 +612,28 @@ img {
 }
 
 
-
-
 /* footer */
 
 
 .footer-style {
     background-color: var(--headings-color);
-    display: flex;
     padding-top: 100px;
     padding-bottom: 100px;
-    flex-direction: column;
 }
+
+.bottom-content {
+    display: flex;
+    gap: 120px;
+}
+
+
+/* first column */
+
 
 .logo-bottom-link {
     padding: 0;
     display: inline-block;
-    margin-bottom: 16px;
-}
-
-.bottom-logo {
-
-    color: var(--background);
-    font-family: "Raleway", sans-serif;
+    margin-bottom: 17.5px;
 }
 
 .bottom-text {
@@ -482,4 +645,49 @@ img {
     display: block;
     width: 264px;
     height: 72px;
+}
+
+
+.bottom-logo {
+
+    color: var(--background);
+    font-family: "Raleway", sans-serif;
+}
+
+/* second column */
+
+.social-media-text {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--second-background);
+    margin-bottom: 16px;
+}
+
+.social-links-footer {
+    display: flex;
+    gap: 16px;
+}
+
+
+.social-link-footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--brand-color);
+
+    fill: var(--second-background);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: var(--footer-social-media-pressed-state);
 }
