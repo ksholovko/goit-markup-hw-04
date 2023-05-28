@@ -649,9 +649,11 @@ img {
 .bottom-content {
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
 }
 
+.logo-text {
+    margin-right: 120px;
+}
 
 /* first column */
 
@@ -717,7 +719,7 @@ img {
 }
 
 .sm-icon {
-    fill: var(--second-background);
+    fill: #f4f4fd;
 }
 
 .social-link-footer:hover,
