@@ -511,9 +511,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(#8e8f99);
-    /* fill: #8E8F99; */
+    color: #8e8f99;
+
 }
+
+/* fill: #8E8F99; */
 
 .customer-icon {
     fill: currentColor;
