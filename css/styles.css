@@ -601,12 +601,12 @@ img {
     column-gap: 24px;
 }
 
-.filter-list-item {
+.filter-list-link {
     display: block;
 }
 
-.filter-list-item:hover,
-.filter-list-item:focus {
+.filter-list-link:hover,
+.filter-list-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -649,7 +649,7 @@ img {
 .bottom-content {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+    margin-right: 120px;
 }
 
 
